@@ -1,0 +1,24 @@
+<!-- Press and Craft Meta checkout bridge for Squarespace (paste into a Code Block on the bridge page) -->
+<p style="text-align:center;font-family:sans-serif;font-size:18px;line-height:1.5;">
+  Taking you to our Etsy shop to finish your order...<br>
+  If nothing happens, <a href="https://www.etsy.com/shop/PressandCraftLLC">tap here to continue to Etsy</a>.
+</p>
+<script>
+(function () {
+  var listings = {
+    "4572778812": "https://www.etsy.com/listing/4572778812/personalized-school-spirit-ornament",
+    "4572776894": "https://www.etsy.com/listing/4572776894/personalized-coach-ornament-custom",
+    "4572774044": "https://www.etsy.com/listing/4572774044/personalized-family-christmas-ornament",
+    "4540993233": "https://www.etsy.com/listing/4540993233/personalized-christmas-ornament-custom"
+  };
+  var shop = "https://www.etsy.com/shop/PressandCraftLLC";
+  var target = shop;
+  try {
+    var hay = window.location.search + window.location.hash;
+    for (var id in listings) {
+      if (hay.indexOf(id) !== -1) { target = listings[id]; break; }
+    }
+  } catch (e) {}
+  window.location.replace(target);
+})();
+</script>
