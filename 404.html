@@ -121,14 +121,15 @@ footer { margin-top: 28px; font-size: 14px; color: #555; }
           if (!entry) { return; }
           var id = null;
           var quantity = 1;
+          var explicitQty = false;
           if (typeof entry === "string" || typeof entry === "number") { id = String(entry); }
           else {
             id = entry.id || entry.retailer_id || entry.product_id || entry.productId || entry.listing_id || null;
             if (id) { id = String(id); }
-            if (entry.quantity) { quantity = parseInt(entry.quantity, 10); }
-            else if (entry.qty) { quantity = parseInt(entry.qty, 10); }
+            if (entry.quantity) { quantity = parseInt(entry.quantity, 10); explicitQty = true; }
+            else if (entry.qty) { quantity = parseInt(entry.qty, 10); explicitQty = true; }
           }
-          if (id && products[id]) { addItem(id, quantity, true); parsedJson = true; }
+          if (id && products[id]) { addItem(id, quantity, explicitQty); parsedJson = true; }
         });
       } catch (e) { parsedJson = false; }
     }
