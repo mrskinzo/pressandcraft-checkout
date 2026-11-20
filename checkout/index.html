@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press &amp; Craft Checkout</title>
+<meta name="description" content="Press and Craft checkout. Review your personalized ornament and finish your order on Etsy.">
+<style>
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #faf7f2; line-height: 1.55; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 13px; font-weight: bold; color: #7a4a21; margin: 0 0 8px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+h3 { font-size: 19px; margin: 0 0 6px; }
+.intro { font-size: 18px; }
+.products { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 16px; }
+.product { background: #fff; border: 1px solid #e3ddd3; border-radius: 12px; padding: 20px; }
+.product p { margin: 6px 0; }
+.price { font-weight: bold; }
+.qty { font-weight: bold; }
+.button { display: inline-block; margin-top: 12px; padding: 12px 18px; background: #1d5c46; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; }
+.button:hover, .button:focus { background: #144233; }
+.shop-link { display: inline-block; margin-top: 12px; font-weight: bold; color: #1d5c46; }
+.help { background: #fff; border: 1px solid #e3ddd3; border-radius: 12px; padding: 20px; margin-top: 28px; }
+footer { margin-top: 28px; font-size: 14px; color: #555; }
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<p class="eyebrow">Press &amp; Craft LLC</p>
+<h1>Press &amp; Craft Checkout</h1>
+<p class="intro">Review your cart below. When you are ready, use the button for each item to finish your order on Etsy. You will choose your size and add your personalization on Etsy, and you will pay on Etsy.</p>
+</header>
+<section>
+<h2 id="cart-heading">Your cart</h2>
+<p id="cart-note">Choose an ornament below to finish your order on Etsy.</p>
+<ul id="cart-list" class="products">
+<li class="product" data-id="4572778812">
+<h3>Personalized School Spirit Ornament</h3>
+<p>Custom team name and number, shatterproof keepsake.</p>
+<p class="price">From $24.95</p>
+<p>Sizes: Small 3 in $24.95, Medium 4 in $29.95, Large 4.7 in $34.95</p>
+<p class="qty" hidden>Quantity: <span class="qty-value">1</span></p>
+<a class="button" href="https://www.etsy.com/listing/4572778812/personalized-school-spirit-ornament">Finish your order on Etsy</a>
+</li>
+<li class="product" data-id="4572776894">
+<h3>Personalized Coach Ornament</h3>
+<p>Custom teacher name Christmas gift, shatterproof keepsake.</p>
+<p class="price">From $24.95</p>
+<p>Sizes: Small 3 in $24.95, Medium 4 in $29.95, Large 4.7 in $34.95</p>
+<p class="qty" hidden>Quantity: <span class="qty-value">1</span></p>
+<a class="button" href="https://www.etsy.com/listing/4572776894/personalized-coach-ornament-custom">Finish your order on Etsy</a>
+</li>
+<li class="product" data-id="4572774044">
+<h3>Personalized Family Christmas Ornament</h3>
+<p>Custom name and year, shatterproof keepsake.</p>
+<p class="price">From $24.95</p>
+<p>Sizes: Small 3 in $24.95, Medium 4 in $29.95, Large 4.7 in $34.95</p>
+<p class="qty" hidden>Quantity: <span class="qty-value">1</span></p>
+<a class="button" href="https://www.etsy.com/listing/4572774044/personalized-family-christmas-ornament">Finish your order on Etsy</a>
+</li>
+<li class="product" data-id="4540993233">
+<h3>Personalized Pet Ornament</h3>
+<p>Custom dog or cat name, shatterproof Christmas keepsake, memorial gift.</p>
+<p class="price">From $24.95</p>
+<p>Sizes: Small 3 in $24.95, Medium 4 in $29.95, Large 4.7 in $34.95</p>
+<p class="qty" hidden>Quantity: <span class="qty-value">1</span></p>
+<a class="button" href="https://www.etsy.com/listing/4540993233/personalized-christmas-ornament-custom">Finish your order on Etsy</a>
+</li>
+</ul>
+</section>
+<section class="help">
+<h2>How checkout works</h2>
+<ol>
+<li>Review the item or items in your cart.</li>
+<li>Tap Finish your order on Etsy for an item.</li>
+<li>On Etsy, choose your size, add your personalization, and complete payment.</li>
+</ol>
+<p>Etsy checkout is per listing, so if your cart has more than one item, please finish each item on Etsy separately.</p>
+<p><a class="shop-link" href="https://www.etsy.com/shop/PressandCraftLLC">Visit the Press &amp; Craft shop on Etsy</a></p>
+</section>
+<footer>
+<p>Press &amp; Craft LLC. Checkout and payment happen on Etsy. No payment details are collected on this page.</p>
+</footer>
+</main>
+<script>
+(function () {
+  var products = {
+    "4572778812": "https://www.etsy.com/listing/4572778812/personalized-school-spirit-ornament",
+    "4572776894": "https://www.etsy.com/listing/4572776894/personalized-coach-ornament-custom",
+    "4572774044": "https://www.etsy.com/listing/4572774044/personalized-family-christmas-ornament",
+    "4540993233": "https://www.etsy.com/listing/4540993233/personalized-christmas-ornament-custom"
+  };
+  var shop = "https://www.etsy.com/shop/PressandCraftLLC";
+  var list = document.getElementById("cart-list");
+  var note = document.getElementById("cart-note");
+  var items = {};
+  var order = [];
+  function addItem(id, quantity, explicit) {
+    if (!products[id]) { return; }
+    if (!items[id]) { items[id] = { quantity: 1, explicit: false }; order.push(id); }
+    if (quantity && quantity > 0) { items[id].quantity = quantity; }
+    if (explicit) { items[id].explicit = true; }
+  }
+  function decodeSafe(value) {
+    try { return decodeURIComponent(value); } catch (e) { return value; }
+  }
+  try {
+    var raw = decodeSafe(window.location.search + " " + window.location.hash);
+    var params = new URLSearchParams(window.location.search);
+    var hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+    var productsValue = params.get("products") || hashParams.get("products") || params.get("product_ids") || params.get("product") || "";
+    var parsedJson = false;
+    if (productsValue) {
+      var decodedValue = decodeSafe(productsValue);
+      try {
+        var data = JSON.parse(decodedValue);
+        var entries = Array.isArray(data) ? data : (data && data.products ? data.products : [data]);
+        entries.forEach(function (entry) {
+          if (!entry) { return; }
+          var id = null;
+          var quantity = 1;
+          var explicitQty = false;
+          if (typeof entry === "string" || typeof entry === "number") { id = String(entry); }
+          else {
+            id = entry.id || entry.retailer_id || entry.product_id || entry.productId || entry.listing_id || null;
+            if (id) { id = String(id); }
+            if (entry.quantity) { quantity = parseInt(entry.quantity, 10); explicitQty = true; }
+            else if (entry.qty) { quantity = parseInt(entry.qty, 10); explicitQty = true; }
+          }
+          if (id && products[id]) { addItem(id, quantity, explicitQty); parsedJson = true; }
+        });
+      } catch (e) { parsedJson = false; }
+    }
+    if (!parsedJson) {
+      Object.keys(products).forEach(function (id) {
+        var first = raw.indexOf(id);
+        if (first === -1) { return; }
+        var count = 0;
+        var pos = 0;
+        while (true) {
+          var found = raw.indexOf(id, pos);
+          if (found === -1) { break; }
+          count += 1;
+          pos = found + id.length;
+        }
+        var after = raw.slice(first + id.length, first + id.length + 80);
+        var quantity = 1;
+        var explicit = false;
+        var qtyMatch = after.match(/quantity[^0-9]{0,10}([1-9][0-9]*)/i) || after.match(/qty[^0-9]{0,10}([1-9][0-9]*)/i) || after.match(/^\s*[:xX]\s*([1-9][0-9]*)/);
+        if (qtyMatch) { quantity = parseInt(qtyMatch[1], 10); explicit = true; }
+        else if (count > 1) { quantity = count; explicit = true; }
+        addItem(id, quantity, explicit);
+      });
+      order.sort(function (a, b) { return raw.indexOf(a) - raw.indexOf(b); });
+    }
+  } catch (e) {}
+  var allItems = list.querySelectorAll(".product");
+  if (order.length > 0) {
+    order.forEach(function (id) {
+      var el = list.querySelector('[data-id="' + id + '"]');
+      if (el) { list.appendChild(el); }
+    });
+    allItems.forEach(function (el) {
+      var id = el.getAttribute("data-id");
+      if (order.indexOf(id) === -1) { el.style.display = "none"; }
+      else {
+        var entry = items[id];
+        if (entry && entry.explicit && entry.quantity > 0) {
+          var qtyEl = el.querySelector(".qty");
+          var qtyValue = el.querySelector(".qty-value");
+          if (qtyEl && qtyValue) { qtyValue.textContent = String(entry.quantity); qtyEl.hidden = false; }
+        }
+      }
+    });
+    if (order.length === 1) { note.textContent = "Your cart has 1 item. Use the button below to finish your order on Etsy."; }
+    else { note.textContent = "Your cart has " + order.length + " items. Use the button for each item to finish your order on Etsy."; }
+  } else {
+    note.textContent = "We did not find a specific item in your link, so here are all four personalized ornaments. Choose one to finish your order on Etsy.";
+  }
+})();
+</script>
+</body>
+</html>
